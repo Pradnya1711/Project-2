@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gender Predector</title>
+
+<style>
+    body {
+    background-color: #7e5eff;
+  }
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    }
+    .card{
+color: black;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    #title{
+  font-size: 40px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  width: 80%;        
+  position: relative;
+  margin: auto;
+  color: #020332;
+  letter-spacing: 0.2em;
+    }
+    .container {
+    position: absolute;
+    background-color: white;
+    /* width: 90%; */
+    max-width: 31.25em;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 3em 2em;
+    border-radius: 0.5em;
+    align-items: center;
+    
+  }
+  .submit-btn {
+    align-items: center;
+    font-size: px;
+    padding: 10px;
+    background-color: rgb(195, 128, 214);
+    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-left: 150px;
+    margin-top: 20px;
+  }
+  .name-input{
+    padding: 15px;
+    font-size: medium;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 100px;
+    margin-top: 15px;
+  }
+  #in-wrap{
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  gap: 1em;
+  margin: 2.5em 0;
+}
+@media (max-width: 900px) 
+{
+  body{
+    background-color: lightcoral;
+  }
+  .card{
+  width: 100px;
+  margin-left: 90px;
+  align-items: center;
+  }
+  #title{
+  font-size: 15px;
+  font-weight: 200;
+  text-transform: uppercase;
+  position: relative;
+  margin: auto;
+  color: black;
+  letter-spacing: 0.2em;
+  }
+  .name-input{
+    font-size: 15px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 5px;
+    height: 30px;
+  }
+  .submit-btn{
+    height: 30px;
+    margin-right: 150px;
+  }
+ 
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="card">
+<p id="title">Gender Detector</p>
+    <input class="name-input" type="text" id="name-input"
+placeholder="Enter your name here.."><br>
+ <button id="submit-btn" class="submit-btn">Predict</button>
+ </div>
+<p class="name"></p>
+<p class="gender"></p>
+<p class="probability"></p>
+<p class="count"></p>
+<p class="msg-txt"></p>
+
+</div>
+</div>
+<script src="./gender.js">
+    </script>
+</body></html>
